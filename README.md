@@ -12,11 +12,11 @@ This repo contains the information you need about capstones - due dates, expecta
 * **Monday 1/4/2021:** Preparation for Capstone Demos - also your last day of front-end.
 * **Tuesday 1/5/2021:** Front-end Capstone Demos/end of front-end part of web dev bootcamp.
 
-[Requirements](./01_requirements-and-deadlines.md)
+[Requirements](./01-requirements-and-deadlines.md)
 
-[Initial Proposal](02_initial-proposal.md)
+[Initial Proposal](02-initial-capstone-proposals.md)
 
-[Mentor Checkins](03_mentor-1on1s.md)
+[Mentor Checkins](03-mentor-one-on-ones.md)
 
 
 
