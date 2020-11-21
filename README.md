@@ -3,7 +3,7 @@
 This repo contains the information you need about capstones - due dates, expectations, etc.  Click on one of the links below to find out more.
 
 ### DEADLINES
-* **Monday 11/30/2020:** Initial Proposal Due (Use the Google form found on the [initial proposal page](./02_initial-proposal.md)) - please don't wait until the actual due date for this. We have to review and approve all proposals. This will be done on a first come, first serve basis.
+* **Monday 11/30/2020:** Initial Proposal Due (Use the Google form found on the [initial proposal page](./02-initial-capstone-proposals.md)) - please don't wait until the actual due date for this. We have to review and approve all proposals. This will be done on a first come, first serve basis.
 * **Thursday 12/3/2020:** Project ERD due - As with the proposal, it is recommended that you submit this ASAP after your proposal is approved.
 * **Monday 12/7/2020:** Final Capstone Proposal due including user stories on Github, wireframes, research for external libraries/tools/technology you application with be using(i.e. external API's, packages, etc.)
 * **Tuesday 12/8/2020:** 1-on-1s with mentor to determine MVP
