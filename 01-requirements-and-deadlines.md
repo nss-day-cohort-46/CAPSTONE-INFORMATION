@@ -25,6 +25,5 @@
 * No MVP can include a calendar. Do not try to integrate with Google Calendar (or anything else).
 * No Web Sockets. Yeah, we know it’s cool. It’s also a tremendous obstacle and provides absolutely zero value to solving your problem.
 * No games
-* No apps that require use of the Spotify API.
 ### Factors for a Successful capstone
 Here are some additional things to consider that will help you plan and build [a successful capstone](https://docs.google.com/presentation/d/1yND0ZBCrKyz5PnDujtE1IL74MQ5D_xNNzwtzpOAmOLo/edit?usp=sharing).
