@@ -1,25 +1,22 @@
 # Front-End Capstones
 
-This repo contains the information you need about capstones - due dates, expectations, etc.  Click on one of the links below to find out more.
+This repo contains the information you need about capstones - due dates, expectations, etc. Click on one of the links below to find out more.
+
+### Requirements & Expectations
+
+You will get approximately two weeks to build an application that showcases what you have learned about front end development during the last three months at NSS. The application you build must meet the following [expectations](./01-requirements-and-deadlines.md).
 
 ### DEADLINES
-* **Monday 11/30/2020:** Initial Proposal Due (Use the Google form found on the [initial proposal page](./02-initial-capstone-proposals.md)) - please don't wait until the actual due date for this. We have to review and approve all proposals. This will be done on a first come, first serve basis.
-* **Thursday 12/3/2020:** Project ERD due - As with the proposal, it is recommended that you submit this ASAP after your proposal is approved.
-* **Monday 12/7/2020:** Final Capstone Proposal due including user stories on Github, wireframes, research for external libraries/tools/technology you application with be using(i.e. external API's, packages, etc.)
-* **Tuesday 12/8/2020:** 1-on-1s with mentor to determine MVP
-* **Wednesday 12/07/2020:** Coding begins if you capstone mentor feels like you've planned enough
-* **Saturday 12/18/2020:** MVP is due - EVERY person will do a soft demo to the instructors
+* **Monday 11/30/2020 9:00 AM:** Initial Proposal Due, see [instructions](./02-initial-capstone-proposals.md).
+
+* **Monday 12/7/2020:** Final Capstone Proposal Due, see [instructions](./03-mentor-one-on-ones.md). - please don't wait until the actual due date for this. We have to review all proposals and have one on ones with each of you before approving the proposals. This will be done on a first come, first serve basis.
+
+* **Monday 12/7/2020 & Tuesday 12/8/2020:** 1-on-1s with mentor to determine MVP in the order the completed proposals were submitted. **Once you have approval from your capstone mentor, you may begin coding!**
+
+* **Thursday 12/17/2020:** That last day for MVP approval - If you reach MVP earlier, please reach out to your mentor. For MVP approval, you must walk your mentor through your application. Once they agree that you have implemented all the features for MVP, your lead instructor will then sit with you and ask you to explain the code for your application. They could also ask you questions about what we have learned in the last three months. **Only after approval from the lead instructor on your MVP may you move on to stretch goals!**
+
+* **Friday 12/18/2020:** Soft demos start at 9 AM. EVERY person will do a soft demo in front of the cohort. 
+
 * **Monday 1/4/2021:** Preparation for Capstone Demos - also your last day of front-end.
-* **Tuesday 1/5/2021:** Front-end Capstone Demos/end of front-end part of web dev bootcamp.
 
-[Requirements](./01-requirements-and-deadlines.md)
-
-[Initial Proposal](02-initial-capstone-proposals.md)
-
-[Mentor Checkins](03-mentor-one-on-ones.md)
-
-
-
-
-
-
+* **Tuesday 1/5/2021:** Front-end Capstone Demos for NSS students & staff.
