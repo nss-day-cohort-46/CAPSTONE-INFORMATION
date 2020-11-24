@@ -6,7 +6,7 @@ Open the [Capstone Proposal Template](https://docs.google.com/document/d/1rZM4WK
 
 1. Click `File` > `Make A Copy` to create your own copy of this template
 1. Fill out your name and the top section under `Initial Proposal`.
-1. Click on the blue `Share` button in the top right corner and add your instruction team. Here are our emails: jisie.david@nashvillesoftwareschool.com, bryannilsen@gmail.com, madisonpeper@gmail.com, ScottSilver47@gmail.com
+1. Once you are done with the initial proposal, click on the blue `Share` button in the top right corner and add your instruction team. Here are our emails: jisie.david@nashvillesoftwareschool.com, bryannilsen@gmail.com, madisonpeper@gmail.com, ScottSilver47@gmail.com
 1. Wait for approval from an instructor on your initial proposal **BEFORE** filling out the rest of the proposal document.
 
 #### Your initial proposal is needed to
