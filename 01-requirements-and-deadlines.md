@@ -8,10 +8,10 @@
 * Persistent data storage (i.e., json-server)
 * Your database must look like the ERD your mentor approved
 * All primary keys and foreign keys in your database need to be integers
-* Minimal Styling (Your app should be visually appealing to the eye and have a logical, simple interface for the user. Styling should be your last priority and worked on only when your mentor approves.)
 * The console in your developer tools should not have any errors, warnings are ok.
 * Your application should be data driven. This means no hard-coded values for dynamic routes, drop-downs, etc. These should always be fetched from the database.
 * It is NOT required to use an external API.
+* Minimal Styling (Your app should be visually appealing to the eye and have a logical, simple interface for the user. Styling should be your last priority and worked on only when your mentor approves.)
 ### Planning:
 * Use dbdiagram.io, Lucidchart, etc. to build your ERD.
 * Create wireframes (using moqups, lucidchart, photoshop, adobe XD, Figma, etc.)
