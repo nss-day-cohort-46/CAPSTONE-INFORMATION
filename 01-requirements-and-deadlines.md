@@ -6,7 +6,7 @@
 * Login: Users must be able to authenticate
 * Users and User dependent data: When users authenticate, they use data that only relates to them.
 * Persistent data storage (i.e., json-server)
-* Your database must look like the ERD your mentor approved
+* **Your database must look like the ERD your mentor approved!!!**
 * All primary keys and foreign keys in your database need to be integers
 * The console in your developer tools should not have any errors, warnings are ok.
 * Your application should be data driven. This means no hard-coded values for dynamic routes, drop-downs, etc. These should always be fetched from the database.
