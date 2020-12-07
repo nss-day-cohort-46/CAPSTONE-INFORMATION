@@ -28,7 +28,7 @@ If you plan to use routing in your application, in your application root directo
 Make sure you are in the root directory of your application and run the following command:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nss-day-cohort-44/CAPSTONE-INFORMATION/scripts/auth.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/nss-day-cohort-44/CAPSTONE-INFORMATION/main/scripts/auth.sh)"
 
 ```
 
