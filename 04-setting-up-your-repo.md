@@ -4,8 +4,19 @@ Please read through all the instructions thoroughly before starting and reach ou
 
 ### Initial Setup
 
+** If your repository is empty: **
+
 1. In the directory that you want to create your application, run `npx create-react-app the-name-of-your-app`.
 1. `cd` into the application directory that has been created.
+
+** OR if you repo is not empty (it has a `clone` button available): **
+
+1. Clone down your repo.
+1. `cd` into your repo.
+1. Run `npx create-react-app .`.
+
+** Once your React application has been created, follow the rest of these steps: **
+
 1. Add `.eslintcache` to the bottom of your `.gitignore`.
 1. Open your `README.md` and delete all text in the file.
 1. Add and commit your changes on `main`.
@@ -53,6 +64,10 @@ Make sure to add import statements for `Route` and `Redirect` from `react-router
         <Route path="/register" render={props => <Register {...props} />} />
     </>
 ```
+
+### API Keys
+
+If you are using any API keys, make sure you add the files with the API keys to your `.gitignore`. ** DO NOT PUSH UP YOUR API KEYS TO GITHUB.**
 
 ### Github Workflow
 
