@@ -20,3 +20,8 @@ You will get approximately two weeks to build an application that showcases what
 * **Monday 1/4/2021:** Preparation for Capstone Demos - also your last day of front-end.
 
 * **Tuesday 1/5/2021:** Front-end Capstone Demos for NSS students & staff. See [expectations for demos](./05-presentation-notes-for-demos.md).
+
+
+### Setting up your capstone repository
+
+Please go [here](./04-setting-up-your-repo.md) for repo setup instructions.
