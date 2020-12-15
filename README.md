@@ -25,3 +25,8 @@ You will get approximately two weeks to build an application that showcases what
 ### Setting up your capstone repository
 
 Please go [here](./04-setting-up-your-repo.md) for repo setup instructions.
+
+### Demo Day Notes
+
+Please go [here](./05-presentation-notes-for-demos.md) for instructions on soft demo day and actual demo day.
+
