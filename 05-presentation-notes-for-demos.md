@@ -29,7 +29,7 @@ We will let you know after 5 minutes of presenting your soft demo, but you may c
 - Lessons Learned
 
 
-### Order for Soft Demos
+### Order for Demos
 
 Remember that you are expected to demo your application no matter where you are with it on soft demo day:
 
@@ -39,22 +39,21 @@ Kyle S
 
 Heath
 
-Jayna
-
 Danny
 
-Trent
-
-Alan
+Jayna
 
 Patrick
 
+Alan
 
 Silas
 
 Matthew
 
 Jaron
+
+**BREAK**
 
 Will
 
@@ -66,9 +65,6 @@ Dillon
 
 Jasmin
 
-
-Tracy
-
 Sanjeet
 
 Charlie
@@ -79,10 +75,11 @@ Kristen
 
 Erica
 
+**BREAK**
+
 Ted
 
 Jake
-
 
 Suganya
 
