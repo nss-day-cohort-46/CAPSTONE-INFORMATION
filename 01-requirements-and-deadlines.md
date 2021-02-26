@@ -2,7 +2,7 @@
 ### Technical Requirements:
 * React Application, this means there should be no direct querying of the DOM (i.e., no `document.querySelector()`, `document.getElementById()`, `document.getElementsByClassName()`, etc.)
 * Single Page Application, this means no page refreshes (i.e., no `window.reload()` or `document.reload()` ).
-* CRD using JS Fetch API
+* CRUD using JS Fetch API
 * Login: Users must be able to authenticate
 * Users and User dependent data: When users authenticate, they use data that only relates to them.
 * Persistent data storage (i.e., json-server)

@@ -17,9 +17,9 @@ You will get approximately two weeks to build an application that showcases what
 
 * **Friday 03/26/2021:** Soft demos start at 9 AM. EVERY person will do a soft demo in front of the cohort. See [expectations for demos](./05-presentation-notes-for-demos.md).
 
-* **Monday 04/12/2021:** Preparation for Capstone Demos - also your last day of front-end.
+* **Monday 04/05/2021:** Preparation for Capstone Demos - also your last day of front-end.
 
-* **Tuesday 04/13/2021:** Front-end Capstone Demos for NSS students & staff. See [expectations for demos](./05-presentation-notes-for-demos.md).
+* **Tuesday 04/06/2021:** Front-end Capstone Demos for NSS students & staff. See [expectations for demos](./05-presentation-notes-for-demos.md).
 
 
 ### Setting up your capstone repository
@@ -29,4 +29,3 @@ Please go [here](./04-setting-up-your-repo.md) for repo setup instructions.
 ### Demo Day Notes
 
 Please go [here](./05-presentation-notes-for-demos.md) for instructions on soft demo day and actual demo day.
-
