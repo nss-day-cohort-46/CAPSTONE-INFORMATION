@@ -3,96 +3,83 @@ set -u
 
 mkdir -p ./src/components/auth && cd $_
 
-echo 'import React, { useRef } from "react"
+echo 'import React, { useState } from "react"
+import { useHistory } from "react-router-dom"
+import { authApi, userStorageKey } from "./authSettings"
 import "./Login.css"
 
-export const Register = (props) => {
-    const firstName = useRef()
-    const lastName = useRef()
-    const email = useRef()
-    const password = useRef()
-    const verifyPassword = useRef()
-    const passwordDialog = useRef()
-    const conflictDialog = useRef()
+export const Register = () => {
+
+    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "" })
+    const [conflictDialog, setConflictDialog] = useState(false)
+
+    const history = useHistory()
+
+    const handleInputChange = (event) => {
+        const newUser = { ...registerUser }
+        newUser[event.target.id] = event.target.value
+        setRegisterUser(newUser)
+    }
 
     const existingUserCheck = () => {
-        // If your json-server URL is different, please change it below!
-        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
-            .then(_ => _.json())
+        
+        return fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}?email=${registerUser.email}`)
+            .then(res => res.json())
             .then(user => !!user.length)
     }
 
     const handleRegister = (e) => {
         e.preventDefault()
 
-        if (password.current.value === verifyPassword.current.value) {
-            existingUserCheck()
-                .then((userExists) => {
-                    if (!userExists) {
-                        // If your json-server URL is different, please change it below!
-                        fetch("http://localhost:8088/users", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json"
-                            },
-                            body: JSON.stringify({
-                                email: email.current.value,
-                                password: password.current.value,
-                                name: `${firstName.current.value} ${lastName.current.value}`
-                            })
+        existingUserCheck()
+            .then((userExists) => {
+                if (!userExists) {
+                    fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            email: registerUser.email,
+                            name: `${registerUser.firstName} ${registerUser.lastName}`
                         })
-                            .then(_ => _.json())
-                            .then(createdUser => {
-                                if (createdUser.hasOwnProperty("id")) {
-                                    // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-                                    localStorage.setItem("app_user_id", createdUser.id)
-                                    props.history.push("/")
-                                }
-                            })
-                    }
-                    else {
-                        conflictDialog.current.showModal()
-                    }
-                })
-        } else {
-            passwordDialog.current.showModal()
-        }
+                    })
+                        .then(res => res.json())
+                        .then(createdUser => {
+                            if (createdUser.hasOwnProperty("id")) {
+                                sessionStorage.setItem(userStorageKey, createdUser.id)
+                                history.push("/")
+                            }
+                        })
+                }
+                else {
+                    setConflictDialog(true)
+                }
+            })
+
     }
 
     return (
         <main style={{ textAlign: "center" }}>
 
-            <dialog className="dialog dialog--password" ref={passwordDialog}>
-                <div>Passwords do not match</div>
-                <button className="button--close" onClick={e => passwordDialog.current.close()}>Close</button>
-            </dialog>
-
-            <dialog className="dialog dialog--password" ref={conflictDialog}>
+            <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
-                <button className="button--close" onClick={e => conflictDialog.current.close()}>Close</button>
+                <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
-                    <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
+                    <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
-                    <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
+                    <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
-                    <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputPassword"> Password </label>
-                    <input ref={password} type="password" name="password" className="form-control" placeholder="Password" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="verifyPassword"> Verify Password </label>
-                    <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
+                    <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Sign in </button>
@@ -103,21 +90,28 @@ export const Register = (props) => {
 }
 ' > ./Register.js
 
-echo 'import React, { useRef } from "react"
-import { Link } from "react-router-dom";
+echo 'import React, { useState } from "react"
+import { Link, useHistory } from "react-router-dom";
+import { authApi, userStorageKey } from "./authSettings"
 import "./Login.css"
 
 
-export const Login = props => {
-    const email = useRef()
-    const password = useRef()
-    const existDialog = useRef()
-    const passwordDialog = useRef()
+export const Login = () => {
+    const [loginUser, setLoginUser] = useState({ email: "" })
+    const [existDialog, setExistDialog] = useState(false)
+
+    const history = useHistory()
+
+    const handleInputChange = (event) => {
+        const newUser = { ...loginUser }
+        newUser[event.target.id] = event.target.value
+        setLoginUser(newUser)
+    }
+
 
     const existingUserCheck = () => {
-        // If your json-server URL is different, please change it below!
-        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
-            .then(_ => _.json())
+        return fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}?email=${loginUser.email}`)
+            .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }
 
@@ -126,47 +120,34 @@ export const Login = props => {
 
         existingUserCheck()
             .then(exists => {
-                if (exists && exists.password === password.current.value) {
-                    // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-                    localStorage.setItem("app_user_id", exists.id)
-                    props.history.push("/")
-                } else if (exists && exists.password !== password.current.value) {
-                    passwordDialog.current.showModal()
-                } else if (!exists) {
-                    existDialog.current.showModal()
+                if (exists) {
+                    sessionStorage.setItem(userStorageKey, exists.id)
+                    history.push("/")
+                } else {
+                    setExistDialog(true)
                 }
             })
     }
 
     return (
         <main className="container--login">
-            <dialog className="dialog dialog--auth" ref={existDialog}>
+            <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
-                <button className="button--close" onClick={e => existDialog.current.close()}>Close</button>
-            </dialog>
-            <dialog className="dialog dialog--password" ref={passwordDialog}>
-                <div>Password does not match</div>
-                <button className="button--close" onClick={e => passwordDialog.current.close()}>Close</button>
+                <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Application Name</h1>
+                    <h1>Nutshell</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
-                        <input ref={email} type="email"
+                        <input type="email"
                             id="email"
                             className="form-control"
                             placeholder="Email address"
-                            required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <label htmlFor="inputPassword"> Password </label>
-                        <input ref={password} type="password"
-                            id="password"
-                            className="form-control"
-                            placeholder="Password"
-                            required />
+                            required autoFocus
+                            value={loginUser.email}
+                            onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
                         <button type="submit">
@@ -176,11 +157,21 @@ export const Login = props => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register">Register for an account</Link>
             </section>
         </main>
     )
 }
 ' > ./Login.js
+
+echo '// If your json-server API URL or endpoint is different, please change it below!
+export const authApi = {
+  localApiBaseUrl: "http://localhost:8088",
+  endpoint: "users"
+}
+
+// The user id is saved under the key app_user_id in session Storage. Change below if needed!
+export const userStorageKey = "app_user_id"
+' > ./authSettings.js
 
 touch ./Login.css
