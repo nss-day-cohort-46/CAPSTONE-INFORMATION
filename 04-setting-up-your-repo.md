@@ -43,8 +43,6 @@ Make sure you are in the root directory of your application and run the followin
 
 ```
 
-In `index.js`, make sure to have `import { BrowserRouter as Router } from "react-router-dom"` and wrap your application component in `<Router></Router>`.
-
 Place this in your main app React component (i.e., App.js, Kennel.js, etc.)
 
 ```js
@@ -76,6 +74,8 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { userStorageKey } from "./auth/authSettings"
 ```
+
+In `index.js`, make sure to have `import { BrowserRouter as Router } from "react-router-dom"` and wrap your application component in `<Router></Router>`.
 
 *The `Register` and `Login` components assume your local JSON Server is running at port 8088 and that you have an endpoint for `users`. Both of these can be changed in the `authApi.js` in the `auth` directory.*
 
@@ -109,7 +109,7 @@ The one and only place the API keys should be in is your `Settings.js` file.
 
 ## Environment Variables
 
-If you interested in using a `.env` file **instead** of `Settings.js`, please read through the [documentation](https://create-react-app.dev/docs/adding-custom-environment-variables/%23adding-development-environment-variables-in-env): 
+If you interested in using a `.env` file **instead** of `Settings.js`, please read through the [documentation](https://create-react-app.dev/docs/adding-custom-environment-variables/): 
 
 1. The `.gitignore` already contains several `.env` files but if your file has a name that is not listed in the `.gitignore`, be sure to add it.
 1. You will still need to have a `.example` file. (And it **should not** contain your API keys, just a placeholder.)
