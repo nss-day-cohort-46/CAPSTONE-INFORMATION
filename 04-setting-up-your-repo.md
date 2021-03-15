@@ -43,6 +43,8 @@ Make sure you are in the root directory of your application and run the followin
 
 ```
 
+In `index.js`, make sure to have `import { BrowserRouter as Router } from "react-router-dom"` and wrap your application component in `<Router></Router>`.
+
 Place this in your main app React component (i.e., App.js, Kennel.js, etc.)
 
 ```js
