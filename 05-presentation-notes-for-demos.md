@@ -33,4 +33,44 @@
 
 Remember that you are expected to demo your application no matter where you are with it on soft demo day:
 
-This will be updated closer to soft demo day.
+#### Virtual Fire Cinema
+
+Blu
+Tracy
+Alex M
+Alex P
+Brittney
+Drea Nichole
+Emily
+
+#### Summerrealm Pictures
+
+Sam
+Dylan
+Nathan
+Caleb
+Calvin
+Logan
+Nick
+Yasmeen
+
+#### Moongraphs Films
+
+Erica
+Cheo
+Thomas
+Dan
+Madison
+Peyton
+Stacey
+Eric
+
+#### Imagisphere Studios
+
+Kylie
+Nicole
+Jake
+Phillip
+Harlin
+Trent
+Kaitlin
