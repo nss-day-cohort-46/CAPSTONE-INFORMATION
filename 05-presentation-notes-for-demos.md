@@ -35,42 +35,42 @@ Remember that you are expected to demo your application no matter where you are 
 
 #### Virtual Fire Cinema
 
-Blu
-Tracy
-Alex M
-Alex P
-Brittney
-Drea Nichole
-Emily
+1. Blu
+1. Tracy
+1. Nick
+1. Alex P
+1. Brittney
+1. Drea Nichole
+1. Emily
 
 #### Summerrealm Pictures
 
-Sam
-Dylan
-Nathan
-Caleb
-Calvin
-Logan
-Nick
-Yasmeen
+1. Sam
+1. Dylan
+1. Nathan
+1. Caleb
+1. Calvin
+1. Logan
+1. Phillip
+1. Yasmeen
 
 #### Moongraphs Films
 
-Erica
-Cheo
-Thomas
-Dan
-Madison
-Peyton
-Stacey
-Eric
+1. Erica
+1. Cheo
+1. Thomas
+1. Dan
+1. Madison
+1. Peyton
+1. Stacey
+1. Eric
 
 #### Imagisphere Studios
 
-Kylie
-Nicole
-Jake
-Phillip
-Harlin
-Trent
-Kaitlin
+1. Kylie
+1. Nicole
+1. Jake
+1. Harlin
+1. Trent
+1. Kaitlin
+1. Alex M
