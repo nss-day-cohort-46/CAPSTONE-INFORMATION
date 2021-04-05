@@ -54,7 +54,6 @@
 **BREAK**
 
 1. Dan
-1. Peyton
 1. Madison
 1. Erica
 1. Dylan
